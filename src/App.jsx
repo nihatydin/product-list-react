@@ -12,7 +12,7 @@ function App() {
   const [selectedColors, setSelectedColors] = useState({});
 
   useEffect(() => {
-    fetch("http://localhost:3001/products")
+    fetch("https://product-list-api-5wsd.onrender.com/products")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data);
